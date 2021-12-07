@@ -28,7 +28,7 @@ print("The round-trip in kilometers is " + str(2 * my_trip_km))
 def lucky_number(name):
   number = len(name) * 9
   message = "Hello " + name + ". Your lucky number is " + str(number)
-  str(number)
+  
   return message
 	    
 print(lucky_number("Kay"))
