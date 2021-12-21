@@ -140,3 +140,12 @@ print(nametag("Francesco", "Rinaldi"))
 print(nametag("Jean-Luc", "Grand-Pierre")) 
 # Should display "Jean-Luc G." 
 print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
+
+
+def skip_elements(elements):
+	# code goes here
+	element = [e for i, e in enumerate(elements) if i % 2 == 0]
+	return element
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
